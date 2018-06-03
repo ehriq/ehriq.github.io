@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+        <title>O que fazer quando se é um programador e não sabe o que fazer pra melhorar</title>
+        <meta charset="utf-8" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://tekniq.com.br/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://tekniq.com.br/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://tekniq.com.br/theme/pygment.css" />
+
+        <script src="http://tekniq.com.br/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
+</head>
+
+<body id="index" class="home">
+
+
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="http://tekniq.com.br/">tekniq <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+
+              <ul class="columns">
+                <li><a href="http://tekniq.com.br/">Home</a></li>
+
+                <li><a href="http://tekniq.com.br/pages/sobre.html">Sobre</a></li>
+
+              </ul>
+            </div>
+
+<section id="content" class="body">
+
+   <div class="row">
+        <div class="eleven columns">
+
+
+            <header>
+              <h2 class="entry-title">
+                <a href="http://tekniq.com.br/o-que-fazer-quando-se-e-um-programador-e-nao-sabe-o-que-fazer-pra-melhorar.html" rel="bookmark"
+                   title="Permalink to O que fazer quando se é um programador e não sabe o que fazer pra melhorar">O que fazer quando se é um programador e não sabe o que fazer pra&nbsp;melhorar</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2015-11-08T22:09:00-02:00">
+                Dom 08 novembro 2015
+              </abbr>
+              <address class="vcard author">Por
+                <a class="url fn" href="http://tekniq.com.br/author/erick.html"> Erick</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <p><em>Pesquei este post de um bloq antigo (2012) e ainda acho que é interessante.
+Está do modo que foi publicado, e em breve dou uma revisada para ver se tem
+coisa a melhorar. Mas enquanto isso, fica essa versão.</em></p>
+<p>Vi uma frase interessante hoje: “The more you sweat in training, the less you
+will bleed in battle.”, ou “Quanto mais você se esforça no treinamento, menos
+você sangra na batalha”. Isso me “incomodou” bastante, e decidi compartilhar
+algumas idéias de como treinar em programação. Seguem as três primeiras:</p>
+<ol class="arabic">
+<li><p class="first"><strong>Aprenda algum outro jeito de fazer um trabalho:</strong> eu trabalho
+profissionalmente, hoje em dia, com <span class="caps">PHP</span>. E o modo padrão de fazer debug em
+<span class="caps">PHP</span> é usar o bom e velho var_dump. Daí se enche de var_dumps o script, e na
+hora da execução é um pandemônio, porque você precisa ver se o valor está
+sendo exibido e, caso seja um objeto complexo ou um array com muitos itens e
+sub-itens, achar onde está o item necessário. Fica nojento, mas muita gente
+se acostuma com isso, eu mesmo estava, apesar de incomodado.</p>
+<p>(Antes que perguntem: eu não poderia contar com alterações no php.ini ou
+.htaccess para gravar os logs de erro).</p>
+<p>Até o dia que eu li, não lembro onde, um artigo falando sobre gravação de log.
+Aquilo abriu a mente: “pô, gravar log! é só abrir um arquivo usando o fopen,
+usar o sprintf e o fwrite, e eu tenho um arquivo que acompanha a execução sem
+emporcalhar a minha saída na tela.”. Por coincidência, uns dias depois apareceu
+um debug complicado, de código que eu não conhecia, e usando essa técnica
+consegui identificar os pontos de funcionamento e rastrear cada uma das
+variáveis que eu precisava.</p>
+<p>Qual a lição disso? Com um pouco de pesquisa e ferramentas que eu já conhecia,
+consegui pensar de outra forma e resolver um problema de um modo melhor. No caso
+do debug, particularmente, solucionou dois problemas, o do sistema e o meu.</p>
+<p>Pra começar olhe para o trabalho que você faz atualmente e pense no que te
+incomoda de verdade. Procure alguma solução diferente, tente olhar o “problema”
+de outro ponto de vista.</p>
+</li>
+<li><p class="first"><strong>Conheça ferramentas diferentes.</strong> E ferramentas não são apenas linguagens de
+programação, mas também editores de texto, <span class="caps">IDE</span>’s, sistemas operacionais. Não é
+necessário conhecer para dominar, mas ao menos brinque um pouco, instale,
+entenda o funcionamento e estude mais a fundo as coisas que gostar mais.</p>
+<p>Este artigo, por exemplo, está sendo escrito usando markdown, que é uma sintaxe
+de marcação de textos voltada para produção de html. Simplifica bastante a
+geração de textos, e existe um plugin de wordpress para que o editor de
+postagens aceite a sintaxe markdown (plugin que eu uso, aliás). E para gerar
+documentações mais complexas, você pode abrir mão dos pesados editores de texto
+e usar LaTeX, que gera documentos profissionais com bastante qualidade. E a
+partir de um único arquivo-fonte, ele gera saída em diferentes formatos. Depois
+que você monta um modelo simples, gerar documentação fica muito simples.</p>
+<p>Linguagens diferentes como haskell e python trazem novos conceitos que podem ser
+aplicados no momento da codificação (no meu caso, conhecer as listas de python
+me ajudou a melhorar o modo como uso arrays no <span class="caps">PHP</span>).</p>
+<p>Assim como ter trabalhando anteriormente com <span class="caps">ASP</span>.Net e C# me ensinou algumas
+lições importantes sobre organização e arquitetura de sistemas um pouco mais
+complexos (onde muitas vezes a complexidade é imposta pelo processo/ferramenta,
+e não pelo projeto, com algum motivo não muito claro no princípio), e aprender a
+resolver problemas comuns de deploy em soluções compiladas.</p>
+<p>Editores como o Vim te obrigam a pensar antes de digitar e aprender sequências
+de comandos para executar tarefas de edição de textos, de modo mais eficiente. E
+pode, também, ensinar expressões regulares.</p>
+<p>Enfim, são ferramentas diferentes que, cada uma à sua maneira, mostram que não
+existe bala de prata, e sim muitas idéias interessantes para serem reusadas
+quando necessário.</p>
+<p>Pra começar escolha uma linguagem qualquer que te chame a atenção e siga um
+tutorial completo dela, do começo ao fim, sem o compromisso de dominar
+totalmente a linguagem que está aprendendo, e sim de aprender coisas novas.</p>
+</li>
+<li><p class="first"><strong>Lembre que conhecimento não tem data de validade e você leva pra onde
+quiser</strong> seja para sua vida profissional, para a faculdade, para o mestrado,
+para outro emprego, para sua própria empresa. A preguiça mental de fazer
+“como todo mundo faz” faz com que os profissionais sejam comparados apenas
+pelo conhecimento de digitação de código e implementação de coisas parecidas.
+Os poucos que conseguem resolver problemas de modo inteligente são os que se sobressaem.</p>
+<p>E outra coisa: conhecimento elimina o “encosto da gambiarra”. Sabe o Padrões de
+Projeto (Design Patterns), aquele livro que todo programador que pensa em passar
+da categoria “júnior” deve ler? Ele tem várias saídas interessantes para coisas
+que são feitas na base gambiarra, mas que na verdade são atestados de ignorância
+e despreparo do programador. Outros livros de padrões, como o Domain-Driven
+Design e o Patterns of Enterprise Application Architecture também demonstram
+outras soluções úteis (como o ActiveRecord que a camada de dados do Ruby on
+Rails usa).</p>
+<p>Mas não adianta só ler os livros. Praticar é importante, praticar muito é mais
+importante, praticar sempre é essencial (olhe novamente a frase do começo do
+texto). E não adianta também decorar os livros, saber todos os padrões de cabeça
+e achar que eles são as únicas melhores soluções para qualquer problema, porque
+eles são apenas referências, são apenas martelos, chaves e coisas parecidas que
+ganham utilidade na mão de gente que sabe usar.</p>
+<p>Pra começar, pela Internet você encontra diversos livros e artigos sobre padrões
+de projeto. Procure conhecer e depois implemente pelo menos cinco destes padrões
+em algum projeto pessoal (ou coisa parecida), e compare a qualidade de seu
+código antes e depois deste conhecimento. Dois padrões interessantes para
+implementar são o Strategy e o Factory.</p>
+</li>
+</ol>
+
+            </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "o-que-fazer-quando-se-e-um-programador-e-nao-sabe-o-que-fazer-pra-melhorar.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://tekniq.com.br.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+            </div>
+
+
+        </div><!-- /.eleven.columns -->
+
+<div class="three columns">
+
+<h4>Páginas</h4>
+
+ <ul>
+      <li><a href="http://tekniq.com.br/pages/sobre.html">Sobre</a></li>
+  </ul>
+
+<h4>Categorias</h4>
+<ul class="blank">
+		<li><a href="http://tekniq.com.br/category/experiencia.html">experiência</a></li>
+		<li><a href="http://tekniq.com.br/category/python.html">python</a></li>
+		<li><a href="http://tekniq.com.br/category/virtualbox.html">virtualbox</a></li>
+</ul>
+
+
+<h4>Tags</h4>
+	<ul class="blank">
+</ul>
+
+
+
+</div> </div><!-- /.row -->
+
+
+</section>
+
+       </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+       <div class="container.nopad bg">
+
+
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Produzido com <a href="http://getpelican.com/">Pelican</a>,
+                    usando <a href="http://python.org">Python</a>.
+                    <br />
+                    Baseado no <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+                <li><div class="btn primary"><a href="https://github.com/ehriq" target="_blank">Github</a></div></li>
+
+                <li><div class="btn twitter"><a href="http://twitter.com/ehriq" target="_blank">Twitter</a></div></li>
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'tekniq';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+  <script src="http://tekniq.com.br/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="http://tekniq.com.br/theme/js/libs/gumby.min.js"></script>
+  <script src="http://tekniq.com.br/theme/js/plugins.js"></script>
+</body>
+</html>

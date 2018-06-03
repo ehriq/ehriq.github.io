@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+        <title>Iniciando com o Virtualbox</title>
+        <meta charset="utf-8" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://tekniq.com.br/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://tekniq.com.br/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://tekniq.com.br/theme/pygment.css" />
+
+        <script src="http://tekniq.com.br/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
+</head>
+
+<body id="index" class="home">
+
+
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="http://tekniq.com.br/">tekniq <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+
+              <ul class="columns">
+                <li><a href="http://tekniq.com.br/">Home</a></li>
+
+                <li><a href="http://tekniq.com.br/pages/sobre.html">Sobre</a></li>
+
+              </ul>
+            </div>
+
+<section id="content" class="body">
+
+   <div class="row">
+        <div class="eleven columns">
+
+
+            <header>
+              <h2 class="entry-title">
+                <a href="http://tekniq.com.br/iniciando-com-o-virtualbox.html" rel="bookmark"
+                   title="Permalink to Iniciando com o Virtualbox">Iniciando com o&nbsp;Virtualbox</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2015-11-08T22:08:00-02:00">
+                Dom 08 novembro 2015
+              </abbr>
+              <address class="vcard author">Por
+                <a class="url fn" href="http://tekniq.com.br/author/erick.html"> Erick</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <p><em>Pesquei este post de um bloq antigo (2012) e ainda acho que é interessante,
+apesar de hoje em dia o Vagrant ter automatizado muito dos procedimentos abaixo.
+Está do modo que foi publicado, e em breve dou uma revisada para ver se tem
+coisa a melhorar. Mas enquanto isso, fica essa versão.</em></p>
+<p>Desde que mexi pela primeira vez com o VMWare Server, há muitos anos, eu virei
+fã de virtualização para desenvolvimento de projetos. A possibilidade de ter um
+ambiente totalmente segregado para cada uma das aplicações em desenvolvimento
+foi a melhor alternativa para o inferno de ter um único servidor com todas as
+configurações possíveis, muitas vezes com conflitos entre elas.</p>
+<p>Com o VirtualBox a coisa ficou mais fácil ainda, porque o tempo de configuração
+da ferramenta é muito pequeno, e a ferramenta é muito simples de usar. E mesmo
+com essa simplicidade, é bastante poderoso; só de ver o que o pessoal do Vagrant
+fez com o VirtualBox já impressiona: com pouca configuração, uma máquina sobe
+sozinha e já preparada para começar o desenvolvimento.</p>
+<p>Mas nesse artigo eu quero dar umas dicas interessantes sobre o uso do
+VirtualBox, pra quem ainda está começando com ele.</p>
+<p><strong>Guest Additions:</strong> a primeira dica, a mais básica, é a de sempre instalar o Guest
+Additions. Essa é a mais simples e básica, e serve de ponto de partida para as
+outras. O Guest Additions instala no sistema “convidado” drivers de vídeo, audio
+e rede otimizados para o VirtualBox, possibilitando diversas melhorias de
+velocidade. Se você usa ambientes gráficos, é possível até redimensionar a tela
+de exibição do ambiente somente redimensionando a tela de exibição do ambiente.</p>
+<p>(Aliás, os termos “convidado” (guest) e “hospedeiro” (host) são dois termos
+muito usados em virtualização, designando repectivamente a máquina virtual e o
+sistema operacional principal, instalado diretamente no computador).</p>
+<p>Para instalar, inicie a máquina virtual e selecione o menu Dispositivos &gt;
+Instalar Adicionais para Convidado. Dependendo do sistema operacional convidado,
+ele abre uma tela de Inicialização Automática com a opção de instalação
+automática. Caso você esteja instalando em sistemas operacionais somente-texto,
+você precisa montar o disco para ter acesso à instalação. Atenção: se você está
+instalando sistema com kernel Linux no sistema convidado, antes de instalar o
+Guest Additions é preciso instalar os kernel headers e algumas ferramentas de
+desenvolvimento. Existem guias que explicam este processo para Ubuntu, Fedora e
+SuSE, encontradas facilmente em qualquer ferramenta de busca.</p>
+<p><strong>Rede:</strong> Configure a rede corretamente. De acordo com sua necessidade você pode dar
+um <span class="caps">IP</span> válido em sua rede para a máquina virtual ou deixar ela totalmente
+isolada, disponível apenas para acesso local. Para mudar estas configurações,
+entre nas configurações da máquina virtual, no segmento “Rede”, selecione o
+Adaptador da placa de rede desejada e escolha a opção na caixa de seleção
+“Conectado a” de acordo com sua necessidaed:</p>
+<ul class="simple">
+<li><em><span class="caps">NAT</span>:</em> a máquina fica isolada para receber conexões diretas, mas consegue acessar
+a internet. Mas não pense que é impossível acessar a máquina: em Avançado você
+consegue fazer redirecionamento de portas! As portas que você indicar serão
+usadas em sua máquina principal para acessar portas da máquina virtual. Por
+exemplo, se você colocar um servidor web na máquina virtual e nesta tela de
+redirecionamento de portas da máquina virtual indicar que a porta 3000 do
+hospedeiro aponta para a 80 do convidado, ao abrir um navegador e entrar com o
+endereço <code>http://localhost:3000</code> você estará acessando o servidor web (normalmente
+na porta 80) da máquina virtual.</li>
+<li><em>Bridge:</em> a máquina virtual ganha um <span class="caps">IP</span> válido e se torna uma máquina da rede, com
+acesso completo.</li>
+<li><em>Rede Interna:</em> as máquinas ganham IPs válidos para integrar uma rede interna
+segregada, válida apenas no computador hospedeiro. É uma solução bacana para
+testar comunicação entre servidores sem precisar expôr as máquinas na rede local.</li>
+</ul>
+<p><strong>Máquinas “template”:</strong> Crie máquinas virtuais padrão e mantenha estas máquinas
+atualizadas. Se a cada novo projeto você precisa recriar totalmente a máquina
+virtual (instalação de Sistema Operacional, instalação de servidores web e banco
+de dados) você está perdendo tempo. É mais interessante montar uma máquina
+básica e, sempre que preciso, copiar esta máquina. Na verdade não copiamos a
+máquina, e sim o disco rígido da máquina. Normalmente este disco fica guardado
+no diretório da máquina virtual, e tem a extensão “vdi”. Mas cuidado para não
+copiar o disco com a máquina salva ou em funcionamento. Pare/desligue a máquina
+totalmente e então copie o disco.</p>
+<p>Quando precisar de uma nova máquina virtual, crie uma cópia deste disco “base”,
+com o nome desejado, e no assistente de criação da máquina virtual indique este
+disco no momento em que ele pergunta sobre o disco a ser usado para a máquina
+virtual. E depois que a máquina estiver em funcionamento, mude as configurações
+necessárias (como nome de máquina e usuário padrão).</p>
+<p><strong>VBoxManage:</strong> Essa dica é diretamente para o coração dos scripteiros: aprenda a
+usar o comando VBoxManage. É uma aplicação voltada a linha de comando que
+permite controlar a máquina virtual sem precisar usar a tela do VirtualBox. Isso
+traz vantagens interessantes como iniciar a máquina virtual sem abrir a tela de
+visualização da máquina (headless) ou obter informações da máquina virtual
+durante o uso. Um exemplo de uso para isso é montar um script de projeto que, ao
+ser rodado, inicializa a máquina virtual e atualiza os arquivos fontes do
+projeto, e outro script que “para” o projeto, efetuando commit automático das
+alterações de código no repositório de controle de versão, tirando cópia de
+segurança da base de dados da máquina virtual e salvando o estado dessa máquina.</p>
+<p><strong>Instalações prontas:</strong> E a última dica é usar o site <a class="reference external" href="http://virtualbox.es">Virtualboxes</a> para obter instalações prontas de sistemas operacionais
+(em sua maioria com base em kernel Linux). É relacionada diretamente com a
+terceira dica, mas essa ficou pro final porque eu só acho interessante usar
+máquinas prontas deste site depois que já se sabe como funciona o VirtualBox, já
+que estas máquinas sempre demandam um ou outro cuidado maior na configuração.</p>
+
+            </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "iniciando-com-o-virtualbox.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://tekniq.com.br.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+            </div>
+
+
+        </div><!-- /.eleven.columns -->
+
+<div class="three columns">
+
+<h4>Páginas</h4>
+
+ <ul>
+      <li><a href="http://tekniq.com.br/pages/sobre.html">Sobre</a></li>
+  </ul>
+
+<h4>Categorias</h4>
+<ul class="blank">
+		<li><a href="http://tekniq.com.br/category/experiencia.html">experiência</a></li>
+		<li><a href="http://tekniq.com.br/category/python.html">python</a></li>
+		<li><a href="http://tekniq.com.br/category/virtualbox.html">virtualbox</a></li>
+</ul>
+
+
+<h4>Tags</h4>
+	<ul class="blank">
+</ul>
+
+
+
+</div> </div><!-- /.row -->
+
+
+</section>
+
+       </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+       <div class="container.nopad bg">
+
+
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Produzido com <a href="http://getpelican.com/">Pelican</a>,
+                    usando <a href="http://python.org">Python</a>.
+                    <br />
+                    Baseado no <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+                <li><div class="btn primary"><a href="https://github.com/ehriq" target="_blank">Github</a></div></li>
+
+                <li><div class="btn twitter"><a href="http://twitter.com/ehriq" target="_blank">Twitter</a></div></li>
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'tekniq';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+  <script src="http://tekniq.com.br/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="http://tekniq.com.br/theme/js/libs/gumby.min.js"></script>
+  <script src="http://tekniq.com.br/theme/js/plugins.js"></script>
+</body>
+</html>
