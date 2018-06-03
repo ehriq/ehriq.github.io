@@ -4,147 +4,147 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://tekniq.com.br/</loc>
+<loc>//www.tekniq.com.br/</loc>
 <lastmod>2015-11-08T22:55:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/archives.html</loc>
+<loc>//www.tekniq.com.br/archives.html</loc>
 <lastmod>2015-11-08T22:55:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tags.html</loc>
+<loc>//www.tekniq.com.br/tags.html</loc>
 <lastmod>2015-11-08T22:55:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/categories.html</loc>
+<loc>//www.tekniq.com.br/categories.html</loc>
 <lastmod>2015-11-08T22:55:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/pages/sobre.html</loc>
+<loc>//www.tekniq.com.br/pages/sobre.html</loc>
 <lastmod>2015-11-08T14:00:00-02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/dicas.html</loc>
+<loc>//www.tekniq.com.br/dicas.html</loc>
 <lastmod>2015-11-08T23:08:00-02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/o-que-fazer-quando-se-e-um-programador-e-nao-sabe-o-que-fazer-pra-melhorar.html</loc>
+<loc>//www.tekniq.com.br/o-que-fazer-quando-se-e-um-programador-e-nao-sabe-o-que-fazer-pra-melhorar.html</loc>
 <lastmod>2015-11-08T22:09:00-02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/iniciando-com-o-virtualbox.html</loc>
+<loc>//www.tekniq.com.br/iniciando-com-o-virtualbox.html</loc>
 <lastmod>2015-11-08T22:08:00-02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/sites-estaticos-ou-como-fazer-a-coisa-complicada-do-jeito-simples.html</loc>
+<loc>//www.tekniq.com.br/sites-estaticos-ou-como-fazer-a-coisa-complicada-do-jeito-simples.html</loc>
 <lastmod>2015-11-08T19:37:00-02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/category/experiencia.html</loc>
+<loc>//www.tekniq.com.br/category/experiencia.html</loc>
 <lastmod>2015-11-08T23:08:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/category/python.html</loc>
+<loc>//www.tekniq.com.br/category/python.html</loc>
 <lastmod>2015-11-08T19:37:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/category/virtualbox.html</loc>
+<loc>//www.tekniq.com.br/category/virtualbox.html</loc>
 <lastmod>2015-11-08T22:08:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/site.html</loc>
+<loc>//www.tekniq.com.br/tag/site.html</loc>
 <lastmod>2015-11-08T19:37:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/pelican.html</loc>
+<loc>//www.tekniq.com.br/tag/pelican.html</loc>
 <lastmod>2015-11-08T19:37:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/dicas.html</loc>
+<loc>//www.tekniq.com.br/tag/dicas.html</loc>
 <lastmod>2015-11-08T23:08:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/python.html</loc>
+<loc>//www.tekniq.com.br/tag/python.html</loc>
 <lastmod>2015-11-08T19:37:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/carreira.html</loc>
+<loc>//www.tekniq.com.br/tag/carreira.html</loc>
 <lastmod>2015-11-08T23:08:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/programacao.html</loc>
+<loc>//www.tekniq.com.br/tag/programacao.html</loc>
 <lastmod>2015-11-08T23:08:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/virtualbox.html</loc>
+<loc>//www.tekniq.com.br/tag/virtualbox.html</loc>
 <lastmod>2015-11-08T22:08:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/tag/blog.html</loc>
+<loc>//www.tekniq.com.br/tag/blog.html</loc>
 <lastmod>2015-11-08T19:37:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://tekniq.com.br/author/erick.html</loc>
+<loc>//www.tekniq.com.br/author/erick.html</loc>
 <lastmod>2015-11-08T23:08:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
